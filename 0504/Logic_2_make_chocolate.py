@@ -14,3 +14,12 @@ def make_chocolate(small, big, goal):
         return goal - big * 5
   
     return -1
+
+def make_chocolate_v2(small, big, goal):
+    actual_big = min(goal / 5, big)
+    new_goal = goal - actual_big * 5
+
+    if new_goal <= small:
+        return new_goal
+        
+    return -1

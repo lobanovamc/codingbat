@@ -4,8 +4,10 @@
 # sleep_in(True, False) → False
 # sleep_in(False, True) → True
 
+#1
 def sleep_in(weekday, vacation):
     return weekday == False or vacation == True
 
+#2
 def sleep_in(weekday, vacation):
     return not weekday or vacation
